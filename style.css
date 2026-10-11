@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f6f8;
+    color: #222;
+}
+
+header {
+    background: #263b50;
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+
+main {
+    width: min(900px, 92%);
+    margin: 30px auto;
+}
+
+section {
+    background: white;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    background: #245db3;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #194783;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 16px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font: inherit;
+}
+
+#notes-list {
+    padding-left: 24px;
+}
+
+#notes-list li {
+    margin: 16px 0;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+#notes-list li button {
+    background: #b42318;
+}
+
+#status {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#status.success {
+    color: #176534;
+    background: #e7f6ec;
+}
+
+#status.error {
+    color: #9b1c1c;
+    background: #fdeaea;
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 16px;
+    }
+}
